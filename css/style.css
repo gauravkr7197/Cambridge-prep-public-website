@@ -4,10 +4,15 @@
 }
 .navbar{
     display: flex;  /*flex direction is for row */
+    align-items:center;
+    justify-content: center;
+    position:sticky;       /* To fix the nav bar at the top */
+    top:0;
+    cursor:pointer;
 }
 
 .logo{
-    width: 20%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +20,8 @@
 
 .logo img{
     width: 33%;
-    border: 3px solid white;
-    border-radius: 50px;
+    border: 3px solid black ;
+    border-radius: 90px;
 }
 
 .nav-list{
@@ -45,7 +50,8 @@
 .rightNav{
     /* background-color: red; */
     width:50%;
-    text-align:right   /*to put search in the corner */
+    text-align: right;  /*to put search in the corner */
+    padding: 0 23px;
 }
 
 #search{
@@ -63,6 +69,7 @@
 
 }
 
+
 .firstSection{
     height:100vh;   /*viewport height*/
 }
@@ -71,14 +78,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: white;       /*content color */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 50%;
     margin:auto;
+    height:80%;       /*To get the content in center*/
 }
 
 .firstHalf{
-    widows: 80%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,10 +99,37 @@
 }
 
 .secondHalf img{
-    width: 70%;
+    width: 100%;
     border: 4px solid white;
-    border-radius:15px;
+    border-radius:150px;
     display:block;
     margin:auto;
 
+}
+
+.text-big{
+    font-size:38px;
+}
+.text-small{
+    font-size:18px;
+}
+
+.btn{
+    padding:8px 20px;
+    margin: 7px 4px;
+    border:2px solid white;
+    border-radius:8px;
+    /*font-size: 18px; by default font size is 16px */
+    background: none;
+    color:white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding:6px 10px;
+    vertical-align: middle;
+}
+
+.secRight{
+    
 }
